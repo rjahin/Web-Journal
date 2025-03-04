@@ -1,0 +1,36 @@
+.dash-board{
+    display: flex;
+    position: relative;
+    top: 0;
+    margin-top: -16vh;
+
+
+}
+.security-privacy {
+    width: 80%;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.security-privacy h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.security-privacy ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.security-privacy li {
+    padding: 5px 0;
+}
+
+.security-privacy p {
+    margin-top: 10px;
+}

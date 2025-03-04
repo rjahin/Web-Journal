@@ -1,0 +1,71 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/calm-blue.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.centered-content {
+    width: 35%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    box-sizing: border-box;
+    background: lightskyblue;
+    border: 1px solid pink;     
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.dashboard-title, .title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.register-form .form-group {
+    margin-bottom: 15px;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.register-form label {
+    display: block;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="email"] {
+    width: 96%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto Thin", fantasy;      
+}
+
+
+.register-form button:hover {
+    background-color: #0056b3;
+}

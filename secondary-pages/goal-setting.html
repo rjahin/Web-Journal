@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard</title>
+   <link rel="stylesheet" href="../styles/dashboard.css">
+   <link rel="stylesheet" href="../styles/goal-setting.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+</head>
+<body>
+
+
+<header>
+   <aside class="page-title">
+       Blue.
+   </aside>
+   <section class="dash-center">
+       <h1 class="dashboard-title">Dashboard</h1>
+   </section>
+   <section class="links">
+       <a href="../secondary-pages/about.html" title="About">
+           <img src="../images/about.png" alt="Goal Setting">
+       </a>
+       <a href="../secondary-pages/blog.html" title="Resources">
+           <img src="../images/blog.png" alt="Log Emotions">
+       </a>
+       <a href="../secondary-pages/contact.html" title="Contact">
+           <img src="../images/contact.png" alt="Feedback & Support">
+       </a>
+       <a href="../secondary-pages/security-privacy.html" title="Security & Privacy">
+           <img src="../images/resources.png" alt="Security & Privacy">
+       </a>
+   </section>
+</header>
+
+
+<aside class="navigation">
+   <nav>
+       <ul>
+           <li><a href="../MainPages/home.html">Home</a></li>
+           <li><a href="../secondary-pages/goal-setting.html">Goal Setting</a></li>
+           <li><a href="../secondary-pages/Logger.html">Log Emotions</a></li>
+           <li><a href="../secondary-pages/feedback-and-support.html">Feedback & Support</a></li>
+           <li><a href="../secondary-pages/security-privacy.html">Security & Privacy</a></li>
+           <li><a href="../secondary-pages/wellness-resources.html">Wellness Resources</a></li>
+       </ul>
+   </nav>
+</aside>
+
+
+<main class="main-content">
+   <section class="dash-board">
+       <article class="goal-input">
+           <h2>Set Your Goals</h2>
+           <form id="goal-form">
+               <textarea id="goal" class="large-textarea" placeholder="Enter your goal..." oninput="autoExpand(this)"></textarea>
+               <button type="submit">Add Goal</button>
+           </form>
+       </article>
+       <article class="goal-list">
+           <h2>Your Goals</h2>
+           <div id="goal-list">
+
+
+           </div>
+       </article>
+   </section>
+</main>
+
+
+
+
+<script src="../js/goal-form.js"></script>
+
+
+</body>
+</html>

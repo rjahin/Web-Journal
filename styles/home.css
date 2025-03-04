@@ -1,0 +1,273 @@
+.page-title,
+.dash-center {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 5vw;
+    height: 100%;
+}
+
+.links a {
+    display: inline-block; /* Allows the application of padding and margin */
+    margin: 0 10px; /* Spacing between links */
+    transition: transform 0.3s ease; /* Smooth transformation */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate link */
+}
+
+.links img {
+    width: 50px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.links a:hover img {
+    opacity: 0.7; /* Dim the image slightly on hover */
+    transform: scale(1.1); /* Slightly increase the size */
+}
+
+
+.graph{
+    display: flex;
+    position: fixed;
+    margin-top: 0;
+    top: 15.7vh;
+    padding: 18px;
+    left: 50vw;
+    width: 45%;
+    height: 54vh;
+    background: white;
+    color:  #187dce;
+    box-shadow: 0 4px 8px rgba(150, 150, 150, 0.5);
+    border-radius: 10px;
+}
+.average-value .box-header{
+
+}
+
+
+/*
+MAHNOOR
+ */
+
+#emotion-chart {
+    width: 43vw; /* 80% of the viewport width */
+    height: 25vh; /* 60% of the viewport height */
+}
+
+
+.journaling-area {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.journal-entry {
+    margin-bottom: 20px;
+}
+
+.journal-entry h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.journal-entry p {
+    margin-bottom: 10px;
+}
+
+/* Make all the words and numbers on the graph white */
+.chartjs-text {
+    fill: white !important;
+}
+
+
+/*
+MAHNOOR
+ */
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7vw;
+    width: 83vw;
+    min-height: 100vh;
+    padding-top: 2vh;
+}
+
+
+.daily-message {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 27.7vh;
+    right: 26vw;
+    width: 30%;
+    height: 27vh;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    align-self: center;
+}
+
+.daily-message p{
+    color:  #187dce;
+    font-family: Trebuchet MS, sans-serif;
+
+}
+.box-header h2 {
+    margin: 0;
+    font-family: Trebuchet MS, sans-serif;
+    width: 100%;
+    color: white;
+}
+
+.box-header {
+    background: #59adf1;
+    height: 5vh;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.last-goal{
+    display: flex;
+    position: relative;
+    margin: 0;
+    top: 29vh;
+    right: 26vw;
+    width: 30%;
+    height: 26vh;
+    padding-bottom: 2vh;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    align-self: center;
+}
+
+.last-goal:hover, .average-emotion:hover, .daily-message:hover{
+    box-shadow: 0 4px 8px rgba(150, 150, 150, 0.5);
+}
+.last-goal .box-header{
+    background: linear-gradient(to right, #187dce, #76b9ef);
+
+}
+
+.box-header {
+    background: linear-gradient(to right, #187dce, #76b9ef);
+    height: 5vh;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.box-header{
+    font-size: 12px;
+
+}
+
+.average-emotion {
+    position: relative;
+    right: 26vw;
+    bottom: 0;
+    width: 30%;
+    height: 20vh;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.updates{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    left: 15vw;
+    width: 56.5%;
+    bottom: 20vh;
+    height: 18vh;
+    padding-bottom: 2vh;
+    color:  #187dce;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    align-self: center;
+}
+.updates p {
+    margin-top: 2vh;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+
+.updates .box-header {
+    background: linear-gradient(to right, #187dce, #76b9ef);
+    height: 5vh;
+    margin: 0;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+.value{
+    height: 15vh;
+    align-content: center;
+
+}
+.average-value{
+    justify-content: center;
+
+
+}
+
+.average-emotion p{
+    color:  #187dce;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1.5vw;
+    justify-content: center;
+    margin-inline: 1.5vw;
+    text-align: center;
+}
+
+.message{
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1.5vw;
+}
+
+
+.updates .update-content {
+    text-align: center;
+    color:  #187dce;
+    height: 4vh;
+}
+
+
+#message {
+    padding: 10px;
+}
+

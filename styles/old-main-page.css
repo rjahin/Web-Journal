@@ -1,0 +1,251 @@
+.header-navigation {
+    font-size: 18px;
+    background-color: #121212;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center; /
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    bottom: 18px;
+}
+
+.page-logo {
+    height: auto;
+    width: auto;
+    max-height: 10vh;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.nav-link {
+    font-family:Trebuchet MS sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 3vw;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.log-in {
+    font-family:Trebuchet MS sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 3vw;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.nav-link:hover, .log-in:hover {
+    text-decoration: underline;
+}
+
+.log-in:hover {
+    background-color: white;
+    color: #2e9dfc;
+}
+
+body {
+    background-image: url("../images/styled-bg.jpg");
+    background-color: #06a9ff;
+    background-repeat: no-repeat;
+    align-content: center;
+    margin: 0;
+    padding-left: 0;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 140vh;
+    padding-bottom: 40vh;
+    z-index: 1000;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 0;
+
+    height: 50vh;
+}
+
+
+.dashboard-title {
+    display: block;
+    padding-top: 10vh;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    height: 10vh;
+    width: 20vw;
+    top: 0;
+}
+h2{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    color: white;
+
+
+}
+     
+.step-one,
+.step-two,
+.step-three {
+    font-family: "Roboto Thin", fantasy;
+    display: inline-flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    position: relative;
+    height: 62vh;
+    width: 20vw;
+    top: 6.5vh;
+    background-color: #0a0a0a;
+    color: white;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+    border: #ebc934;
+}
+.step-one:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    p , h2{
+        color: black;
+    }
+}
+.step-two:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+    p , h2{
+        color: black;
+    }
+}
+.step-three:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    p , h2 {
+        color: black;
+    }
+
+}
+.dashboard-title{
+    padding: 10px;
+}
+
+.circle {
+    font-family: "Roboto Thin", fantasy;
+    alignment-baseline: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 5vw;
+    height: 9vh;
+    color: black;
+    font-size: 5vh;
+    border-color: Black;
+    background-color: #f0f0f0;
+}
+
+p {
+    align-self: center;
+    margin: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sub-main {
+    font-family: "Roboto Thin", fantasy;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;      
+    justify-content: center;     
+    position: relative;
+    top: 35vh;
+    margin: 0;
+    background-color: #121212;;
+    width: auto;     
+    height: 65vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.sub-main:hover{
+    background-color: white;
+    color: black;
+    .box-text{
+        color: black;
+    }
+}
+.box {
+    display: flex;
+    justify-content: center;      
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box img {
+    width: 20%;      
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.box-text {
+    color: white;
+
+    border-color: white;
+    line-height: 2.2;
+    font-size: 20px;
+    flex: 1;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.brain {
+    float: left;      
+    margin-right: 20px;      
+    margin-bottom: 20px;      
+}
+.container{
+    display: flex;
+    top: 5vh;
+}
+
+

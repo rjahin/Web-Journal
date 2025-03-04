@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/logger.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+</head>
+<body>
+
+
+<header>
+    <aside class="page-title">
+        Blue.
+    </aside>
+    <section class="dash-center">
+        <h1 class="dashboard-title">Dashboard</h1>
+    </section>
+    <section class="links">
+        <a href="../secondary-pages/about.html" title="About">
+            <img src="../images/about.png" alt="Goal Setting">
+        </a>
+        <a href="../secondary-pages/blog.html" title="Resources">
+            <img src="../images/blog.png" alt="Log Emotions">
+        </a>
+        <a href="../secondary-pages/contact.html" title="Contact">
+            <img src="../images/contact.png" alt="Feedback & Support">
+        </a>
+        <a href="../secondary-pages/security-privacy.html" title="Security & Privacy">
+            <img src="../images/resources.png" alt="Security & Privacy">
+        </a>
+    </section>
+</header>
+
+
+<aside class="navigation">
+    <nav>
+        <ul>
+            <li><a href="../MainPages/home.html">Home</a></li>
+            <li><a href="../secondary-pages/goal-setting.html">Goal Setting</a></li>
+            <li><a href="../secondary-pages/logger.html">Log Emotions</a></li>
+            <li><a href="../secondary-pages/feedback-and-support.html">Feedback & Support</a></li>
+            <li><a href="../secondary-pages/security-privacy.html">Security & Privacy</a></li>
+            <li><a href="../secondary-pages/wellness-resources.html">Wellness Resources</a></li>
+        </ul>
+    </nav>
+</aside>
+
+
+<main class="main-content">
+    <section class="emotion-logger">
+        <h2>Log Your Emotions</h2>
+        <form id="emotion-form">
+            <label for="emotion">Emotion:</label>
+            <select id="emotion" name="emotion">
+                <option value="20">Joyful - Extremely Happy</option>
+                <option value="19">Excited - Eager, Enthusiastic</option>
+                <option value="18">Proud - Satisfied with Personal Achievement</option>
+                <option value="17">Content - Peaceful, Satisfied</option>
+                <option value="16">Amazed - Astonished, Surprised in a Good Way</option>
+                <option value="15">Hopeful - Optimistic, Looking Forward to Future</option>
+                <option value="14">Relaxed - Calm, Without Anxiety or Stress</option>
+                <option value="10">Curious - Interested, Eager to Know</option>
+                <option value="9">Nervous - Slightly Anxious, Anticipating</option>
+                <option value="8">Confused - Unsure, Uncertain</option>
+                <option value="7">Disappointed - Unhappy about How Things Turned Out</option>
+                <option value="6">Irritated - Annoyed, Slightly Angry</option>
+                <option value="5">Lonely - Sad Because of Isolation</option>
+                <option value="4">Anxious - Worried, Nervous About a Negative Outcome</option>
+                <option value="3">Furious - Very Angry</option>
+                <option value="2">Terrified - Extremely Fearful</option>
+                <option value="1">Hopeless - Pessimistic, Seeing No Positive Outcomes</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="log">I feel...</label>
+            <textarea id="log" name="notes" placeholder="Describe your feelings..."></textarea>
+            <button type="submit">Log Emotion</button>
+        </form>
+    </section>
+    <section id="submission-box" class="submission-box">
+        <h2>Logged Emotions</h2>
+        <!-- Emotions fetched from the server will be displayed here -->
+        <!-- Logged emotions will be appended here dynamically -->
+    </section>
+</main>
+
+
+<script src="../js/logger.js"></script>
+</body>
+</html>
